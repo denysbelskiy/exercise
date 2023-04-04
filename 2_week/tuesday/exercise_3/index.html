@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form ex_3</title>
+</head>
+<body>
+    <h2>Billing address</h2>
+    <small><em>* Required fields</em></small>
+    <form action="form_submitted.html" method="post">
+        <fieldset>
+            <legend>Contact details</legend>
+
+            <label for="first-name">First name <em>*</em></label>
+            <input type="text" id="first-name" name="fname" required>
+
+            <label for="last-name">Last name <em>*</em></label>
+            <input type="text" id="last-name" name="lname" required>
+
+            <label for="email-address">E-mail address <em>*</em></label>
+            <input type="email" id="email-address" name="email" required>
+        </fieldset>
+        <fieldset>
+            <legend>Address details</legend>
+
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company">
+
+            <label for="address">Address <em>*</em></label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="zip-code">Zip code <em>*</em></label>
+            <input type="text" inputmode="numeric" pattern="[0-9]*" maxlength="4" placeholder="0000" id="zip-code" name="zip-code" required>
+
+            <label for="city">City <em>*</em></label>
+            <input type="text" id="city" name="city" required>
+
+            <label for="phone">Address</label>
+            <input type="tel" placeholder="e.g. +41000000000" pattern="^(?:0|\(?\+41\)?\s?|0041\s?)(21|22|24|26|27|31|32|33|34|41|43|44|51|52|55|56|58|61|62|71|74|76|77|78|79|81|91)(?:[\.\-\s]?\d\d\d)(?:[\.\-\s]?\d\d){2}$" id="phone" name="phonenum">
+        </fieldset>
+        <!-- Checkbox can have specific value with value atribute-->
+        <input type="checkbox" name="toggle-fieldset" id="toggle-fieldset">
+        <label for="toggle-fieldset">Send to this address</label>
+        <fieldset>
+            <legend>Shipping address</legend>
+            <!-- copy paste-->
+        </fieldset>
+        <fieldset>
+            <legend>Delivery method <em>*</em></legend>
+            <input type="radio" name="delivery" id="pickup" value="0" required>
+            <label for="pickup">Pick Up (CHF 0,00)</label>
+
+            <input type="radio" name="delivery" id="post" value="7">
+            <label for="post">Post (CHF 7,00)</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Payment method <em>*</em></legend>
+            <input type="radio" name="payment" id="twint" value="twint" required>
+            <label for="twint">Twint</label>
+
+            <input type="radio" name="payment" id="invoice" value="invoice">
+            <label for="invoice">Invoice</label>
+        </fieldset>
+
+        <fieldset>
+            <label for="comment">Comment</label>
+            <textarea name="comment" id="comment" cols="30" rows="5"></textarea>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
