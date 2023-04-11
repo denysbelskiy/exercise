@@ -1,0 +1,29 @@
+body {
+    background-color: antiquewhite;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: brown;
+    color: aliceblue;
+    width: 100%;
+    margin: 0 auto;
+}
+
+main {
+    flex-grow: 1;
+}
+
+footer {
+    background-color: brown;
+    color: aliceblue;
+    margin-top: auto 0;
+
+}

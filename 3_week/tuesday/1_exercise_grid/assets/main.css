@@ -1,0 +1,14 @@
+body {
+    background-color: bisque;
+}
+
+header {
+    background-color: chocolate;
+    color: aliceblue;
+    width: 100%;
+}
+
+footer {
+    background-color: chocolate;
+    color: aliceblue;
+}
