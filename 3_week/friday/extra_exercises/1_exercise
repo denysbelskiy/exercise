@@ -1,0 +1,54 @@
+Say Hello
+
+inputs: user name (must contain letters and not numbers, start with capital letter)
+
+process: print greerting using name input.
+
+output: "Hello user_name!"
+
+------------------------------
+
+testCases:
+
+1. 
+name: Denys;
+expected output: Hello Denys!;
+
+2.
+name: 3;
+expected output: error message "it's not a name";
+
+3.
+name: Den33
+expected output: error message "must contain letters and not numbers"
+
+4.
+name: dan
+expected output: Hello Dan!
+
+Process
+------------------------------
+
+1. Ask user for name.
+2. Check an input for contraints (must contain only letters, and start with capital letter)
+  2.a continue
+  2.b print error messege and go back to step 1
+3. Check if name starts with capital letter; if not - replace small with capital
+4. Print "Hello " plus user_name
+
+-----------------------------
+
+Refine process
+
+user_name = prompt "Please type your name" + input_name
+Check input_name for number content: 
+  if (user_name is a number or contains numbers(digits))
+    error = true
+  else 
+    if (user_name starts with small letter)
+      replace with capital letter
+    else
+      continue
+    END IF
+  END IF
+alert "Hello " + user_name    

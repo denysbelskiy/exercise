@@ -1,0 +1,36 @@
+Build a characters counter.
+
+input: a string of carachters
+
+process: count amount of characters in the input string
+
+output: the input string and the number of carachters the string contraints
+
+----------------------------
+
+testCases:
+
+1. string: "bla bla bla"
+    expected output: "String "bla bla bla" has 10 characters"
+
+2. string: "123 nla "
+    expected output: "String "123 nla " has 8 characters"
+
+3. string: "1-,.4 _ocs!"
+    expected output: "String "1-,.4 _ocs!" has 11 characters"
+
+-------------------------------
+
+Process:
+
+1. Ask users for a string of any characters 
+2. count amount of characters in the string
+3. print the string and amount of characters it contain
+
+-------------------------------
+
+Refine process
+
+user_string = prompt "Please type here your string"
+str_length = count the string by using .length property 
+print "String " + user_string + " has " + str_length + " characters."

@@ -1,0 +1,44 @@
+Exercise 1
+Allow the user to input digits, afterwards sort and print them in numerical order.
+
+Possible questions
+Is there a limit of inputs? max. 10
+Are there several input fields (one per digit) or one? Only 1
+If there is only one, how is the correct input? Is there a seperator per digit (e.g. comma and/or space)? Official seperator is comma, space is optional
+
+CONSTRAINTS
+Numbers, positive, non-decimal
+Digits, not greater than 9
+Input is string, needs to be converted
+max 10 digits
+min 1 digit
+
+TEST INPUT
+1,2,7,3 => true
+1, 2, 7, 3 => true
+01226354 => false
+
+EXPECTED OUTPUT
+1237 => true
+1,2,3,7 => false
+2371 => false
+[1,2,3,7] => false
+7321 => false
+
+Input: Input digits in one field, seperated by comma
+Process: Sorting algorithm
+Output: Print digits in numerical order
+
+------------------------------------------------------------------------------------------------
+
+1 step : request input min 1 max 10 digits;
+2 step : place the input into a string variable;
+3 step : separate input data from the string variable by ',' with ' ' afterwards or without it and check values if it is a number, convert to integer if it is one, and push it in an empty array one by one;
+4 step : sort array form smaller than big 
+5 step : print data
+
+
+Pseudocode 
+
+--------------------------------------------------------
+
