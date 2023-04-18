@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>age calculaor</title>
+</head>
+
+<body>
+    <script>
+        const birthYear = 2000;
+        function askYear() {
+            return +prompt("type here future year:", 2023);
+        }
+
+        function validateYear (year) {
+            if (isNaN(year)) {
+                alert("Enter correct year, please");
+                return false;
+            }
+            else if (year < birthYear) {
+                alert("Future year can't be smaler than the year of birth");
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+
+        function calulateAge(year) {
+            let age = new Object;
+            age.age1 = (year - 1) - birthYear;
+            age.age2 = year - birthYear;
+            return age;
+        }
+
+        function runCode () {
+            let futureYear = askYear();
+            if (validateYear(futureYear)){
+                let age = calulateAge(futureYear);
+                console.log(`I will be either ${age.age1} or ${age.age2} in ${futureYear}`);
+                return;
+            }
+            console.log("Type the future year correctly!!");
+                
+        }
+
+        runCode();
+    </script>
+</body>
+
+</html>
