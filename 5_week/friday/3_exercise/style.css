@@ -1,0 +1,27 @@
+body{
+    display: block;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.container{
+    border: 5px solid black;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../../../../Studies/Practice/ковер.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.box {
+    border: 2px solid white;
+    width: 100px;
+    position: absolute;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+}
